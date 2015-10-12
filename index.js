@@ -13,7 +13,7 @@ console.log('listening on *:' + port);
 var throttle = process.env.WEPLAY_IP_THROTTLE || 100;
 
 // redis socket.io adapter
-var uri = process.env.WEPLAY_REDIS || 'localhost:6379';
+var uri = process.env.WEPLAY_REDIS_URI || 'localhost:6379';
 io.adapter(require('socket.io-redis')(uri));
 
 // redis queries instance
