@@ -1,6 +1,5 @@
 
 var sio = require('socket.io');
-var browserify = require('browserify-middleware');
 var forwarded = require('forwarded-for');
 var debug = require('debug');
 var Moduleredis = require('redis');
